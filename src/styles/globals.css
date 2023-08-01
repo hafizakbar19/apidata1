@@ -105,3 +105,30 @@ a {
     color-scheme: dark;
   }
 }
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  width: auto;
+  border: red 2px solid;
+  border-radius: 15px;
+  height: 80px;
+  align-items: center;
+  list-style: none;
+
+}
+.nav:hover{
+  box-shadow: 5px 5px 5px gray;
+  border: red 4px solid;
+  
+}
+#one:hover,#two:hover,#three:hover {
+  font-weight: 900;
+  border: red 2px solid;
+  
+}
+li {
+  border: red 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+}
