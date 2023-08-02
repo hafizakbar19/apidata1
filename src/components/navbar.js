@@ -13,6 +13,9 @@ export default function Navbar() {
             <li id="three">
                 <Link href="./contact">Contact</Link>
             </li>
+            <li id="three">
+                <Link href="./dummyData">Data</Link>
+            </li>
         </ul>
     </div>
   )
