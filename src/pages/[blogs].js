@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import { useRouter } from "next/router";
 
@@ -36,11 +37,12 @@ export default function Blogs({ data }) {
   return (
     <div>
       <Navbar />
-      <div key={id}>
+      <div className="data-div" key={id}>
         <h2 className="data-h2">{id}</h2>
         <h3 className="data-h3">{title}</h3>
         <p className="data-p">{body}</p>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import Navbar from "@/components/navbar";
 import Link from "next/link";
 
@@ -18,6 +19,9 @@ export default function DummyData({data}) {
     <div>
 
         <Navbar />
+
+        <h1>This is the Dummy data from JSONPlaceHolder</h1>
+        <h3>You can click at any of the data to see details </h3>
         
         {data.map((item)=>{
             return <div className="data-div" key={item.id}>
@@ -29,6 +33,8 @@ export default function DummyData({data}) {
                 </Link>
                 </div>
         })}
+
+        <Footer />
 
     </div>
   )

@@ -20,11 +20,13 @@ export default function Error() {
   return (
     <div>
         <Navbar />
+        <div className="data-div">
         <h1>Sorry page not found</h1>
         <p>Our team is looking into this matter and working hard to resolve the issue as soon as possible</p>
         <Link href="/">
         Back to Home
         </Link>
+        </div>
     </div>
   )
 }

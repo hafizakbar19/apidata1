@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import Navbar from '@/components/navbar'
+import Footer from '@/components/footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,8 +18,13 @@ export default function Home() {
       </Head>
       <main>
         <Navbar />
-        <h1>This is the home page</h1>
+        <div className="data-div">
+        <h1>Welcome to dynamic data app</h1>
+        <h2>Using jsonplaceholder API</h2>
+        
+        </div>
       </main>
+      <Footer />
     </>
   )
 }
