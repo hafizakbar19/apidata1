@@ -1,4 +1,5 @@
 import Navbar from "@/components/navbar";
+import Link from "next/link";
 
 
 export const getStaticProps = async () => {
@@ -18,10 +19,12 @@ export default function DummyData({data}) {
 
         <Navbar />
 
-        {data.map((el)=>{
-            return <div key={el.id}>
-                <h2>{el.id}</h2>
-                <h3>{el.title}</h3>
+        {data.map((item)=>{
+            return <div key={item.id}>
+                <h2>{item.id}</h2>
+                <Link href={`/${item.id}`}>
+                <h3>{item.title}</h3>
+                </Link>
                 </div>
         })}
 
