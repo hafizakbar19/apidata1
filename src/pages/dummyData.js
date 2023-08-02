@@ -18,12 +18,14 @@ export default function DummyData({data}) {
     <div>
 
         <Navbar />
-
+        
         {data.map((item)=>{
-            return <div key={item.id}>
-                <h2>{item.id}</h2>
+            return <div className="data-div" key={item.id}>
                 <Link href={`/${item.id}`}>
-                <h3>{item.title}</h3>
+                <h2 className="data-h2">{item.id}</h2>
+                
+                <h3 className="data-h3">{item.title}</h3>
+                <p className="data-p">{item.body}</p>
                 </Link>
                 </div>
         })}

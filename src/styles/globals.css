@@ -115,20 +115,64 @@ a {
   height: 80px;
   align-items: center;
   list-style: none;
+  background-color: teal;
+  box-shadow: inset 0 0 20px gray;
 
 }
 .nav:hover{
-  box-shadow: 5px 5px 5px gray;
-  border: red 4px solid;
+  box-shadow: inset 0 0 40px gray;
   
 }
 #one:hover,#two:hover,#three:hover {
   font-weight: 900;
-  border: red 2px solid;
+  box-shadow: inset 0 0 20px gray;
   
 }
 li {
   border: red 1px solid;
   border-radius: 5px;
   padding: 5px;
+
+}
+body {
+  text-align: center;
+  
+}
+.data-div {
+  
+  /* border: red 2px solid; */
+  height: 300px;
+  border-radius: 50px;
+  margin: 10px;
+  padding: 10px;
+  box-shadow:inset 0 0 15px rgba(232, 61, 61, 0.5);
+}
+.data-h2 {
+  /* border: blue 1px solid; */
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: inset 0 0 15px rgba(232, 61, 61, 0.5);
+  padding: 10px;
+}
+
+.data-h3 {
+  /* background-color: green;
+  display: flex;
+  justify-content: center;
+  height: 100px; */
+  /* border: blue 1px solid; */
+  border-radius: 20px;
+  box-shadow: inset 0 0 15px rgba(232, 61, 61, 0.5);
+  padding: 20px;
+  
+}
+.data-p {
+  /* border: blue 1px solid; */
+  border-radius: 20px;
+  height: 150px;
+  box-shadow: inset 0 0 35px rgba(232, 61, 61, 0.5);
+  padding: 20px;
 }

@@ -37,9 +37,9 @@ export default function Blogs({ data }) {
     <div>
       <Navbar />
       <div key={id}>
-        <h2>{id}</h2>
-        <h3>{title}</h3>
-        <p>{body}</p>
+        <h2 className="data-h2">{id}</h2>
+        <h3 className="data-h3">{title}</h3>
+        <p className="data-p">{body}</p>
       </div>
     </div>
   );
